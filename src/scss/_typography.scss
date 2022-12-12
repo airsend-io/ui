@@ -1,0 +1,93 @@
+@import '../fonts/inter-ui/inter.css';
+
+$font-family-sans-serif: 'Inter';
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 1.5;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base;
+$h6-font-size: $font-size-base * 0.75;
+$h7-font-size: $font-size-base * 0.625;
+
+$paragraph-font-size: $font-size-base * 0.875;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-dark);
+}
+
+hr {
+  background-color: var(--border-color);
+  border-color: var(--border-color) !important;
+  width: 100%;
+}
+
+a {
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.text-airsend {
+  color: var(--color-primary) !important;
+}
+
+.text--light {
+  color: var(--text-light) !important;
+}
+
+.text--medium {
+  color: var(--text-medium) !important;
+}
+
+.text-divider {
+  text-align: center;
+  position: relative;
+  padding: 0.5rem 0;
+  span {
+    background: var(--bg-light);
+    position: relative;
+    z-index: 2;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+  }
+  &:before {
+    top: 50%;
+    content: '';
+    display: block;
+    background: var(--border-color);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+// Font Awesome Pro to Free overrides
+.fa-bars,
+.fa-times,
+.fa-search,
+.fa-ellipsis-h,
+.fa-filter,
+.fa-chevron-down,
+.fa-sort-amount-down,
+.fa-check,
+.fa-globe,
+.fa-user-friends,
+.fa-info-circle,
+.fa-language,
+.fa-sign-out,
+.fa-plus,
+.fa-arrow-left,
+.fa-user-plus,
+.fa-paperclip
+{
+  @extend .fas;
+}

@@ -1,0 +1,257 @@
+.card-section {
+  padding: 0rem 0.6rem;
+  margin-top: 0.8rem;
+  display: block;
+
+  &:first-child {
+    margin-top: 1.5rem;
+  }
+
+  h4 {
+    margin-bottom: 0.8rem;
+    font-weight: 300;
+  }
+
+  .sort-filter {
+    padding: 0.5rem 15px;
+    & > span {
+      font-weight: normal;
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 0.9em;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    .form-control {
+      font-weight: normal;
+      font-size: 0.9em;
+    }
+  }
+  .no-channels-filter {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: var(--text-medium);
+  }
+  .welcome-user {
+    text-align: center;
+    margin-top: 20vh;
+    h2 {
+      font-size: 2.3rem;
+      color: var(--color-primary);
+      margin-bottom: 50px;
+    }
+    p {
+      font-size: 1.2em;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+  }
+  .empty-channel {
+    width: 25%;
+    margin: 0 auto;
+  }
+}
+.card {
+  overflow: hidden;
+
+  &.card-float {
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-light);
+    transition: $slow-transition;
+    margin: 0.8rem 0;
+
+    &:hover {
+      box-shadow: $float-3;
+      .card-header {
+        transition: $slow-transition;
+      }
+    }
+
+    &.card-float--new {
+      min-height: 174px;
+      text-align: center;
+      border: 2px dashed var(--border-color-light);
+      background-color: var(--bg-light);
+      box-shadow: none;
+      cursor: pointer;
+      transition: $slow-transition;
+      user-select: none;
+
+      &:hover {
+        border: 2px dashed var(--color-primary);
+        background: var(--bg-light--mixed);
+      }
+
+      .card-body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        i {
+          font-size: 40px;
+          color: var(--text-dark);
+          opacity: 0.1;
+          margin-bottom: 6px;
+        }
+        p {
+          font-size: 0.8rem;
+          color: var(--text-light);
+          margin: 0;
+        }
+      }
+    }
+
+    .card-header {
+      transition: $slow-transition;
+      background: var(--bg-medium-dark);
+      border: 0;
+      color: var(--text-dark);
+      padding: 1rem 1.25rem;
+      align-items: center;
+      display: flex;
+      .team-color-tag {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        position: absolute;
+        left: calc(-1.25rem + 10px);
+      }
+
+      h4 {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1rem;
+        margin: 0;
+        .badge {
+          position: relative;
+          bottom: 2px;
+          margin-left: 2px;
+        }
+      }
+
+      .channel-status-icon {
+        margin-right: 5px;
+        font-size: 0.9em;
+        margin-top: 4px;
+        color: var(--text-light);
+      }
+
+      .card-nav {
+        margin: 0;
+        margin-left: auto;
+        display: flex;
+        .trigger > li,
+        > li {
+          list-style-type: none;
+          a {
+            font-size: 14px;
+            color: var(--text-light);
+          }
+          .more-icon {
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+          }
+        }
+        .v-popover .more-icon:hover,
+        .v-popover.open .more-icon {
+          background: var(--bg-light);
+        }
+      }
+    }
+
+    .card-body {
+      padding: 1rem 1.25rem;
+      padding-top: 10px;
+      position: relative;
+
+      .avatars-list {
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+      }
+    }
+  }
+
+  &.card-transparent {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
+    border-bottom: 2px solid rgba($text-dark, 0.1) !important;
+    margin: 0;
+
+    .card-header {
+      background: transparent;
+      border: 0;
+      padding: 0.75rem 0;
+
+      h2 {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+        display: flex;
+        align-items: center;
+
+        .inline-icon.highlight-icon {
+          color: var(--text-light);
+          font-size: 1.2rem;
+          border-radius: 10rem;
+          width: 1.4rem;
+          display: inline-block;
+          text-align: center;
+          padding: 0.2rem 0;
+          vertical-align: middle;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .card-body {
+      padding: 0.75rem 0;
+      color: var(--text-light);
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.details-list {
+  margin: 0;
+  padding: 0;
+  > li {
+    list-style-type: none;
+    color: var(--text-medium);
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 0.2rem 0;
+    i {
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      width: 20px;
+      height: 12px;
+      margin-right: 0.2rem;
+    }
+  }
+}
+
+.home-channel-settings {
+  .trigger {
+    display: block !important;
+    // #todo, find out if config is available
+  }
+}
+.toast-home {
+  background: var(--text-light);
+  padding: 3em;
+  width: 200px;
+}

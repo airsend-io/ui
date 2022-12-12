@@ -1,0 +1,22 @@
+// SHADOWS
+$float-2: 0 0 1px 0 rgba(10, 22, 70, 0.06), 0 3px 3px -1px rgba(10, 22, 70, 0.1);
+$float-3: 0px 0px 17px 0px rgba(0, 0, 0, 0.1);
+$float-4: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+$float-4-inset: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+$float-inverse: 0 0 1px 0 rgba(10, 22, 70, 0.06),
+  0 -16px 16px -1px rgba(10, 22, 70, 0.1);
+
+// TRANSITIONS
+$base-transition: all 0.1s ease;
+$slow-transition: all 0.2s ease;
+
+$fa-font-path: '../fonts/fontawesome/webfonts';
+
+$navbar-height: 60px;
+$navbar-team-tabs-height: 50px;
+$navbar-total-height: calc(
+  #{$navbar-height} + #{$navbar-team-tabs-height} + 1px
+);
+$footer-height: 60px;
+$chip-height: 2rem;
+$chip-height-sm: 26px;

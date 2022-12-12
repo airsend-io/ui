@@ -1,0 +1,207 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+$colors: (
+  'white': (
+    #fff,
+    #fff,
+    #fff,
+    #fff,
+    #fff
+  ),
+  'dark': (
+    #717d92,
+    #627088,
+    #596780,
+    #4e5d78,
+    #455571,
+    #364766,
+    #283a5b,
+    #14284b,
+    #0a1f44
+  ),
+  'grey': (
+    #fafbfb,
+    #f7f8f9,
+    #f1f2f4,
+    #e1e4e8,
+    #c9ced6,
+    #b0b7c3,
+    #a7aebb,
+    #98a1b1,
+    #8a94a6
+  ),
+  'secondary': (
+    #fafbfb,
+    #f7f8f9,
+    #f1f2f4,
+    #e1e4e8,
+    #c9ced6,
+    #b0b7c3,
+    #a7aebb,
+    #98a1b1,
+    #8a94a6
+  ),
+  'primary': (
+    #f9f8fc,
+    #f3f1fa,
+    #e9e6f6,
+    #d2ccec,
+    #bcb3e2,
+    #9c8fd6,
+    #6f5cc3,
+    #553eb5,
+    #382683
+  ),
+  'purple': (
+    #f9f8fc,
+    #f3f1fa,
+    #e9e6f6,
+    #d2ccec,
+    #bcb3e2,
+    #9c8fd6,
+    #6f5cc3,
+    #553eb5,
+    #382683
+  ),
+  'info': (
+    #f8fbff,
+    #eef7ff,
+    #dceeff,
+    #b3daff,
+    #83c3fe,
+    #4ba7fe,
+    #0284fe,
+    #026dd6,
+    #01408f
+  ),
+  'danger': (
+    #fffbfa,
+    #fef6f3,
+    #fde8e1,
+    #fcd7ca,
+    #fabeaa,
+    #f7926f,
+    #f4541d,
+    #d13a06,
+    #a32801
+  ),
+  'success': (
+    #fafdfc,
+    #f5fbf8,
+    #eaf7f1,
+    #d0eddf,
+    #a9dcc9,
+    #6fcaa8,
+    #36ab80,
+    #23825f,
+    #136a4a
+  ),
+  'warning': (
+    #fffdf8,
+    #fefaf1,
+    #fef7e6,
+    #fdeecb,
+    #fbe0a1,
+    #fbc050,
+    #f7af22,
+    #f69d2c,
+    #ef8511
+  )
+);
+
+$danger: #dd2727;
+$warning: #ff8f00;
+$info: #0284fe;
+
+// text colors
+
+$text-dark: #0a1f44;
+$text-medium: #4e5d78;
+$text-light: #8a94a6;
+$text-muted: #b0b7c3;
+
+$green-gradient: linear-gradient(-180deg, #68d88e 0%, #00d5be 100%);
+$blue-gradient: linear-gradient(-180deg, #1285ff 0%, #1171d0 100%);
+
+$primary: #0097c0;
+$primary-light: #eef6f8;
+$primary-dark: #0d6686;
+
+$light: #fafbfb;
+$border-color: #e7e7e7;
+$border-color-light: #ccd2dd;
+
+$light-60: #fafbfb60;
+
+$background-dark: #4e5d78;
+
+.color-primary {
+  color: $primary !important;
+}
+
+// light mode
+
+:root {
+  // pallete
+  --color-primary: #{$primary};
+  --color-primary--hover: #{darken($primary, 5%)};
+  --color-primary--focus: #{darken($primary, 10%)};
+  --color-primary--shadow: #{rgba($primary, 0.5)};
+  --color-primary--mine: #{rgba($primary, 0.05)};
+  --color-primary--foreground: #fff; // texts that goes over the primary background
+
+  // backgrounds
+  --bg-light: #fff;
+  --bg-light-dark: #fafafa;
+  --bg-light--mixed: #{mix(#fff, $primary, 85%)};
+  --bg-light--transparent: #{rgba(#fff, 0.8)};
+
+  --bg-medium: #fafbfb;
+  --bg-medium-dark: #f1f2f4;
+
+  --bg-dark-overlay: #{rgba(#313133, 0.7)};
+
+  // texts
+  --text-dark: #{$text-dark};
+  --text-medium: #{$text-medium};
+  --text-light: #{$text-light};
+  --text-muted: #{$text-muted};
+
+  // utils
+  --border-color: #e7e7e7;
+  --border-color-light: #e1e4e8;
+  --border-color-medium: #ccd2dd;
+  --modal-overlay: #{rgba($text-dark, 0.3)};
+
+  --loader-color: #e1e4e8;
+  --loader-color--glow: #f1f2f4;
+}
+
+.dark-mode {
+  // backgrounds
+  --bg-light: #232324;
+  --bg-light-dark: #1b1b1b;
+  --bg-light--mixed: #{mix(#232324, $primary, 85%)};
+  --bg-light--transparent: #{rgba(#232324, 0.8)};
+
+  --bg-medium: #111112;
+  --bg-medium-dark: #1b1b1b;
+
+  --bg-dark-overlay: #{rgba(#dedee7, 0.7)};
+
+  // texts
+  --text-dark: #ffffff;
+  --text-medium: #bcbcbd;
+  --text-light: #707070;
+  --text-muted: #606060;
+
+  // utils
+  --border-color: #333;
+  --border-color-light: #474748;
+  --modal-overlay: #{rgba(#000, 0.6)};
+
+  --loader-color: #1b1b1b;
+  --loader-color--glow: #232324;
+}

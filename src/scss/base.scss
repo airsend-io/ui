@@ -1,0 +1,108 @@
+@import 'variables';
+@import 'colors';
+@import 'typography';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~katex/dist/katex.min.css';
+
+// FontAwesome 5
+@import '../fonts/fontawesome/scss/fontawesome.scss';
+@import '../fonts/fontawesome/scss/regular.scss';
+@import '../fonts/fontawesome/scss/solid.scss';
+@import '../fonts/fontawesome/scss/brands.scss';
+
+@import './components/index';
+@import './responsive';
+
+#app {
+  background: var(--bg-medium);
+}
+
+html,
+body,
+#root {
+  font-weight: 500;
+  height: 100%;
+  background: var(--bg-medium);
+  color: var(--text-medium);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body a {
+  color: var(--color-primary);
+  &:hover {
+    color: var(--color-primary--hover);
+  }
+}
+
+body .btn-link {
+  color: var(--color-primary);
+  &:hover {
+    color: var(--color-primary--hover);
+  }
+}
+
+div[contenteditable='true'] {
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  //max-height: 92px;
+  overflow-y: overlay;
+  white-space: pre-wrap;
+}
+div[contenteditable='true']:empty {
+  //background-color: var(--bg-medium-dark);
+  border-color: var(--border-color-light);
+  &::before {
+    content: attr(placeholder);
+    color: var(--text-muted);
+  }
+}
+
+div[contenteditable='true']:focus-visible,
+div[contenteditable='true']:focus {
+  border-color: $primary;
+  outline: none;
+  &::before {
+    content: '';
+  }
+}
+
+.fullheight {
+  height: 100%;
+}
+
+.container-sm {
+  max-width: 600px;
+}
+
+.fullheight-relative {
+  height: calc(100% - 60px);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-medium);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-medium-dark);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--bg-medium);
+}

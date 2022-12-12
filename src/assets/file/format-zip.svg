@@ -1,0 +1,22 @@
+
+<svg width="4px" height="15px" viewBox="0 0 4 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Files-View" transform="translate(-102.000000, -643.000000)" fill="currentColor">
+            <g id="zip-icon" transform="translate(91.000000, 636.000000)">
+                <polygon id="Fill-6" points="13.287 8.812 14.677 8.812 14.677 7.978 13.287 7.978"></polygon>
+                <polygon id="Fill-8" points="11.897 9.644 13.287 9.644 13.287 8.811 11.897 8.811"></polygon>
+                <polygon id="Fill-9" points="13.287 10.479 14.677 10.479 14.677 9.645 13.287 9.645"></polygon>
+                <polygon id="Fill-10" points="11.897 11.312 13.287 11.312 13.287 10.479 11.897 10.479"></polygon>
+                <polygon id="Fill-11" points="13.287 12.145 14.677 12.145 14.677 11.312 13.287 11.312"></polygon>
+                <polygon id="Fill-12" points="11.897 12.98 13.287 12.98 13.287 12.146 11.897 12.146"></polygon>
+                <polygon id="Fill-13" points="13.287 13.813 14.677 13.813 14.677 12.98 13.287 12.98"></polygon>
+                <polygon id="Fill-14" points="11.897 14.647 13.287 14.647 13.287 13.813 11.897 13.813"></polygon>
+                <polygon id="Fill-15" points="13.287 15.48 14.677 15.48 14.677 14.647 13.287 14.647"></polygon>
+                <polygon id="Fill-16" points="11.897 16.314 13.287 16.314 13.287 15.481 11.897 15.481"></polygon>
+                <polygon id="Fill-17" points="13.287 17.148 14.677 17.148 14.677 16.314 13.287 16.314"></polygon>
+                <polygon id="Fill-18" points="11.897 17.982 13.287 17.982 13.287 17.148 11.897 17.148"></polygon>
+                <path d="M13.8428,20.205 C13.8428,20.511 13.5928,20.761 13.2868,20.761 C12.9818,20.761 12.7318,20.511 12.7318,20.205 L12.7318,19.649 L13.8428,19.649 L13.8428,20.205 Z M11.8978,18.538 L11.8978,20.761 C11.8978,21.372 12.3978,21.872 13.0098,21.872 L13.5648,21.872 C14.1758,21.872 14.6768,21.372 14.6768,20.761 L14.6768,18.538 L11.8978,18.538 Z" id="Fill-19"></path>
+            </g>
+        </g>
+    </g>
+</svg>

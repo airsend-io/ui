@@ -1,0 +1,29 @@
+@import './avatar';
+@import './cards';
+@import './channel'; // Home page and the channel cards
+@import './emoji';
+@import './files';
+@import './forms';
+@import './modal';
+@import './navigation';
+@import './utils';
+@import './wiki';
+@import './search';
+@import './tasks';
+@import './grouping';
+@import './teams';
+
+/* MS supports */
+@supports (-ms-overflow-style: none) {
+  .ps {
+    overflow: auto !important;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ps {
+    overflow: auto !important;
+  }
+}
+.ps {
+  position: relative;
+}

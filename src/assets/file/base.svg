@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="30px" viewBox="0 0 25 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 14 Copy 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1.6362 1.4178 25.022 1.4178 25.022 29.9998 1.6362 29.9998"></polygon>
+        <polygon id="path-3" points="1.6362 0.119 25.022 0.119 25.022 28.701 1.6362 28.701"></polygon>
+    </defs>
+    <g id="Files-View" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-315.000000, -319.000000)">
+            <line x1="302.438667" y1="303" x2="1378.56133" y2="303" id="Line-2-Copy" stroke="#E7E7E7" stroke-linecap="square"></line>
+            <g id="Group-14-Copy-17" transform="translate(314.000000, 318.000000)">
+                <g id="Group-3" transform="translate(0.000000, 0.881600)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M4.2342,1.4178 C2.8002,1.4178 1.6362,2.5878 1.6362,4.0158 L1.6362,14.4098 L1.6362,19.6078 L1.6362,27.4018 C1.6362,28.8298 2.8002,29.9998 4.2342,29.9998 L22.4242,29.9998 C23.8602,29.9998 25.0222,28.8298 25.0222,27.4018 L25.0222,19.6078 L25.0222,14.4098 L25.0222,9.2118 L17.2262,1.4178 L4.2342,1.4178 Z" id="Fill-1" fill="#E4E4E4" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group-6" transform="translate(0.000000, 0.881600)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-5"></g>
+                    <path d="M4.2342,0.119 C2.8002,0.119 1.6362,1.287 1.6362,2.717 L1.6362,13.111 L1.6362,18.307 L1.6362,26.103 C1.6362,27.531 2.8002,28.701 4.2342,28.701 L22.4242,28.701 C23.8602,28.701 25.0222,27.531 25.0222,26.103 L25.0222,18.307 L25.0222,13.111 L25.0222,7.913 L17.2262,0.119 L4.2342,0.119 Z" id="Fill-4" fill="#ECECEC" mask="url(#mask-4)"></path>
+                </g>
+                <path d="M25.0212,8.7954 L17.2272,1.0014 L17.2272,6.1954 C17.2272,7.6254 18.3892,8.7954 19.8252,8.7954 L25.0212,8.7954 Z" id="Fill-7" fill="#DCDCDC"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,207 @@
+// Avatars
+.avatar {
+  display: inline-block;
+  position: relative;
+  background: var(--color-primary);
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  text-align: center;
+  border-radius: 100px;
+  background-size: cover !important;
+  user-select: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+  box-sizing: content-box;
+
+  .avatar-body {
+    border: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &.avatar-sm {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+  }
+
+  &.avatar--light {
+    background: lighten($text-light, 30%);
+    color: var(--text-medium);
+  }
+
+  .avatar--rounded {
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .avatar--clickable {
+    cursor: pointer;
+  }
+
+  &.avatar--has-image {
+    background: transparent !important;
+    .avatar-text {
+      opacity: 0;
+    }
+  }
+
+  &:hover .avatar-edit {
+    background: rgba(darken($primary, 10%), 1);
+  }
+
+  &.avatar--channel-default {
+    background: transparent;
+
+    .avatar-default {
+      fill: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &.avatar-icon {
+    background: var(--bg-light);
+    color: var(--text-light);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > .inline-icon {
+      width: 100% !important;
+      height: 100% !important;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .avatar-edit {
+    background: rgba(darken($primary, 10%), 0.5);
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: $base-transition;
+    z-index: 5;
+    cursor: pointer;
+    .trigger {
+      width: 100%;
+    }
+  }
+
+  .avatar-guest {
+    position: absolute;
+    left: -4px;
+    bottom: 0;
+    width: 1rem;
+    height: 1rem;
+    font-size: 1rem;
+    display: block;
+    i {
+      left: 0;
+      top: 0;
+      position: absolute;
+
+      &:first-child {
+        color: var(--text-medium);
+        z-index: 2;
+      }
+
+      &:last-child {
+        -webkit-text-stroke: 2px var(--bg-light);
+        color: var(--bg-light);
+      }
+    }
+  }
+
+  .avatar-status {
+    background: #a1cb3a;
+    width: 0.7rem;
+    height: 0.7rem;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    bottom: 0;
+    border-radius: 100px;
+    border: 1px solid var(--bg-light);
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  .zoom-range {
+    display: block;
+  }
+
+  .croppa-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    opacity: 0;
+    z-index: 3;
+
+    &.croppa--has-target,
+    &.croppa--dropzone {
+      opacity: 1;
+    }
+
+    .icon-remove {
+      display: none;
+    }
+
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+      border-radius: 100%;
+    }
+    .slots {
+      display: none;
+    }
+  }
+}
+
+.avatars-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+  > li {
+    list-style-type: none;
+    color: var(--text-medium);
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 0.2rem 0;
+    width: 15px;
+
+    .avatar {
+      transition: all 0.2s ease;
+      float: right;
+      width: 30px;
+      height: 30px;
+      line-height: 28px;
+      font-size: 12px;
+      border: 2px solid var(--bg-light);
+    }
+  }
+}
