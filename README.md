@@ -4,8 +4,8 @@ Powered by Vue.js v2 + Vuex, the AirSend UI brings great collaboration UI/UX for
 
 ## Requirements
 
-Node.js v14+
-NPM
+* Node.js v14+
+* NPM
 
 ## Setup
 
