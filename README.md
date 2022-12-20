@@ -13,6 +13,9 @@ Powered by Vue.js v2 + Vuex, the AirSend UI brings great collaboration UI/UX for
 npm install --legacy-peer-deps
 ```
 
+Also copy the `.env.sample` file to `.env` and set the values according to your setup (if you're using the dockerized
+Airsend Bootstrap Environment, it's not necessary).
+
 ## Development Server
 
 ```bash
