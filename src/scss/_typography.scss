@@ -87,7 +87,94 @@ a {
 .fa-plus,
 .fa-arrow-left,
 .fa-user-plus,
-.fa-paperclip
-{
+.fa-user,
+.fa-file,
+.fa-paper-plane,
+.fa-envelope,
+.fa-paperclip,
+.fa-bolt,
+.fa-calendar-day,
+.fa-file-alt,
+.fa-list-alt,
+.fa-th,
+.fa-edit,
+.fa-arrow-alt-right,
+.fa-object-group,
+.fa-clone,
+.fa-expand,
+.fa-layer-group,
+.fa-grip-lines,
+.fa-reply,
+.fa-pen,
+.fa-trash,
+.fa-stream,
+.fa-share-alt,
+.fa-pencil,
+.fa-plus-circle,
+.fa-bold,
+.fa-italic,
+.fa-strikethrough,
+.fa-heading,
+.fa-list-ol,
+.fa-list-ul,
+.fa-code,
+.fa-quote-left,
+.fa-link,
+.fa-folder-open,
+.fa-volume,
+.fa-volume-slash,
+.fa-check-double,
+.fa-thumbtack,
+.fa-arrow-alt-to-right,
+.fa-lock,
+.fa-trash-alt,
+.fa-arrows-v,
+.fa-file-contract,
+.fa-cog,
+.fa-key,
+.fa-pencil-alt,
+.fa-upload,
+.fa-comment-lines,
+.fa-download,
+.fa-exchange-alt,
+.fa-users,
+.color-palette .color-item.selected::after,
+.color-palette .color-item.new-color::after,
+.fa-exclamation-triangle,
+.fa-sort-amount-down-alt,
+.fa-long-arrow-right,
+.fa-history,
+.fa-money-check-edit,
+.fa-chevron-right {
   @extend .fas;
+}
+
+.mention.mention-action::before {
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+}
+
+.fa-comment-lines {
+  @extend .fa-comment-dots;
+}
+
+.fa-volume {
+  @extend .fa-volume-high;
+}
+
+.fa-volume-slash {
+  @extend .fa-volume-xmark;
+}
+
+.fa-money-check-edit {
+  @extend .fa-file-pen;
+}
+
+.fa-arrow-alt-to-right, 
+.fa-arrow-alt-right {
+  @extend .fa-arrow-right;
+}
+
+.fal.fa-ellipsis-h {
+  font-weight: 900 !important;
 }
